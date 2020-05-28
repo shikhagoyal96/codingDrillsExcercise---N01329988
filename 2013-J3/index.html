@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>2013-J3</title>
+        <meta charset="utf-8"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>2013-J3-Next distinct year</h1>
+        <form action="" method="post" name="form_treat">
+            
+            <!--getting the user input for the first year-->
+            <label for="year">Enter the year:</label>
+            <input type="text" id="year" name="year"/><br/><br/>
+        
+            <!--submitting the values to the function processForm-->
+            <input type="button"  value="SUBMIT" onclick="processForm()"/>
+
+            <!--displaying the erroe message-->
+            <p>Error : <span id="error"></span></p>
+            <!--displaying the final message-->
+            <p>Output : <span id="result"></span></p>     
+        </form>
+    </body>
+</html>

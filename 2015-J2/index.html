@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>2015-J2</title>
+        <meta charset="utf-8"/>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <h1>2015-J2-Happy or Sad</h1>
+        <form action="" method="post" name="form_treat">
+            <!--asking the user to enter the message with the emoticons-->
+            <label for="userMsg">Enter Your Message:</label>
+            <input type="text" id="userMsg" name="userMsg"/><br/><br/>
+            
+            <!--submit button to submit the user values -->
+            <input type="button"  value="SUBMIT" onclick="processForm()"/>
+
+            <!--error message to if the entered message is not between 255 characters-->
+            <p>Error : <span id="error"></span></p>
+            
+            <!--displaying the final message-->
+            <p>Output : <span id="result"></span></p>     
+        </form>
+    </body>
+</html>
