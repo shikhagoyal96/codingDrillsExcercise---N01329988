@@ -4,7 +4,9 @@ arr.length = 6;
 
 function distinctDigits(num2){
     console.log(num2);
-    var count = 0;
+    var count = count3 = 0;
+
+    //while loop to store the digits of the input year in an array
     while(num2){
         var remainder = num2 % 10;
         //console.log(remainder);
@@ -15,10 +17,11 @@ function distinctDigits(num2){
     }
     console.log(arr);
 
-
-    for(var i=0; i<6; i++){
+    //checking if the year is a distinct otherwise call the distictDigits function with an 
+    //incremented year
+    for(var i=0; i<arr.length-1; i++){
         var count2 = 0;
-        for(var j=0; j<6; j++){
+        for(var j=0; j<arr.length-1; j++){
             if(arr[i]==arr[j]){
                 count2++;
                 console.log(count2);
@@ -28,9 +31,11 @@ function distinctDigits(num2){
         if(count2 >= 2){
             distinctDigits(num2+1);
         }else{
-            document.getElementById("result").innerHtML = num2;
+            count3++;
         }
     }
+    if(count3==arr.length)
+    document.getElementById("result").innerHtML = num2;
 }
 
 function processForm(){
